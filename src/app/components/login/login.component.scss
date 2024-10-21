@@ -1,0 +1,72 @@
+/* Estilos para login.component.scss */
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Fondo celeste suave */
+  }
+  
+  .login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #007acc; /* Azul para el título */
+    margin-bottom: 25px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-item {
+    --background: transparent;
+    margin-bottom: 20px;
+  }
+  
+  ion-label {
+    color: #007acc; /* Azul para etiquetas */
+    font-weight: bold;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    border: 1px solid #007acc; /* Borde azul */
+    border-radius: 5px;
+  }
+  
+  ion-button {
+    --background: #007acc; /* Azul para el botón */
+    --border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  ion-button:hover {
+    --background: #005f99; /* Efecto hover */
+  }
+  
+  ion-footer {
+    background-color: #007acc; /* Fondo azul para el footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
