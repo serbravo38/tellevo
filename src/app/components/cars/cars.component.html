@@ -1,26 +1,25 @@
 <form (ngSubmit)="addCar()">
   <ion-item>
-    <ion-label position="floating">patente</ion-label>
-    <ion-input name="patente"[(ngModel)]="car.patente" ></ion-input>
+    <ion-label position="floating">Patente</ion-label>
+    <ion-input name="patente" [(ngModel)]="car.patente"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">marca</ion-label>
-    <ion-input name="marca" [(ngModel)]="car.marca" ></ion-input>
+    <ion-label position="floating">Marca</ion-label>
+    <ion-input name="marca" [(ngModel)]="car.marca"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">modelo</ion-label>
-    <ion-input name="modelo"[(ngModel)]="car.modelo" ></ion-input>
+    <ion-label position="floating">Modelo</ion-label>
+    <ion-input name="modelo" [(ngModel)]="car.modelo"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">año</ion-label>
-    <ion-input type="number" name="year"[(ngModel)]="car.year" ></ion-input>
+    <ion-label position="floating">Año</ion-label>
+    <ion-input type="number" name="year" [(ngModel)]="car.year"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">ruta img</ion-label>
-    <ion-input name="imageUrl" [(ngModel)]="car.imageUrl" ></ion-input>
+    <ion-label position="floating">Ruta Img</ion-label>
+    <ion-input name="imageUrl" [(ngModel)]="car.imageUrl"></ion-input>
   </ion-item>
 
   <ion-button expand="full" color="warning" type="submit">Guardar</ion-button>
 </form>
-<br><br>
-<ion-button expand="full" color="danger" (click)="logout()">Logout</ion-button>
+

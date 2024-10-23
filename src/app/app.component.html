@@ -1,3 +1,57 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu *ngIf="showMenu" contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title><img src="assets/images/Logo.png" alt="Logo" class="logo"/></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item routerLink="/portada">Portada</ion-item>
+        <ion-item routerLink="/inicio">Formulario de vehiculos</ion-item>
+        <ion-item routerLink="/listar-carros">Lista de automoviles</ion-item>
+        <ion-item routerLink="/home">Cerrar sesión</ion-item>
+        <ion-item routerLink="componenet/map">Rutas</ion-item>
+
+
+
+
+
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start" *ngIf="showMenu">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <img src="assets/images/Logo.png" alt="Logo" class="logo"/>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-router-outlet></ion-router-outlet>
+    </ion-content>
+
+    <ion-footer>
+      <ion-toolbar class="footer-toolbar">
+        <ion-buttons slot="start" class="footer-buttons">
+          <ion-button href="https://www.instagram.com" fill="clear" class="rotate-icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+          <ion-button href="https://www.facebook.com" fill="clear" class="rotate-icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+          <ion-button href="https://www.twitter.com" fill="clear" class="rotate-icon">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>
+
+  </div>
 </ion-app>

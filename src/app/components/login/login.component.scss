@@ -1,72 +1,61 @@
-/* Estilos para login.component.scss */
+ion-content {
+  --background: #e0e0e0; /* Gris claro como fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
-.page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #e0f7fa; /* Fondo celeste suave */
-  }
-  
-  .login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #007acc; /* Azul para el título */
-    margin-bottom: 25px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  ion-item {
-    --background: transparent;
-    margin-bottom: 20px;
-  }
-  
-  ion-label {
-    color: #007acc; /* Azul para etiquetas */
-    font-weight: bold;
-  }
-  
+ion-item {
+  --background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px;
+
   ion-input {
-    --padding-start: 10px;
-    --padding-end: 10px;
-    border: 1px solid #007acc; /* Borde azul */
-    border-radius: 5px;
+    --border-radius: 10px; /* Aplicar border-radius directamente */
+    border-radius: 10px; /* Estilo adicional, si es necesario */
   }
-  
-  ion-button {
-    --background: #007acc; /* Azul para el botón */
-    --border-radius: 5px;
-    margin-top: 20px;
-    width: 100%;
+}
+
+.header {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  .subTitle {
+    color: gray;
+    font-size: 15px;
   }
-  
-  ion-button:hover {
-    --background: #005f99; /* Efecto hover */
+
+  .title {
+    font-size: 30px; 
   }
-  
-  ion-footer {
-    background-color: #007acc; /* Fondo azul para el footer */
-    color: white;
-    text-align: center;
-    padding: 10px;
+}
+
+.enlace-olvidaste-clave {
+  margin-left: 16px;
+}
+
+ion-button {
+  --background: #ff8200;
+  border-radius: 15px !important; /* Agrega !important si es necesario */
+  animation: colorChange 1s infinite ease-in-out;
+  padding: 8px 16px;
+
+  ::part(native) {
+    border-radius: 15px; /* Aplicar border-radius al componente interno */
   }
-  
-  .error-message {
-    color: red;
-    font-size: 0.9em;
-    margin-top: -10px;
-    margin-bottom: 20px;
+}
+
+@keyframes colorChange {
+  0% {
+    --background: #ff8200;
   }
-  
+  50% {
+    --background: #ffa733;
+  }
+  100% {
+    --background: #ff8200;
+  }
+}
