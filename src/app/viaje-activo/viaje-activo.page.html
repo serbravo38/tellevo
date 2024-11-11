@@ -1,0 +1,42 @@
+<!-- viaje-activo.page.html -->
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Viaje Activo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <!-- Mostrar nombre del usuario -->
+    <ion-item>
+      <ion-label>Nombre del usuario:</ion-label>
+      <ion-text>{{ nombreUsuario }}</ion-text>
+    </ion-item>
+
+    <!-- Mostrar destino seleccionado -->
+    <ion-item>
+      <ion-label>Destino:</ion-label>
+      <ion-text>{{ destinoSeleccionado === 'puenteAlto' ? 'Puente Alto' : 'Maipú' }}</ion-text>
+    </ion-item>
+
+    <!-- Mostrar monto total -->
+    <ion-item>
+      <ion-label>Total:</ion-label>
+      <ion-text>{{ total | currency:'CLP':'symbol':'1.0-0' }}</ion-text>
+    </ion-item>
+
+    <!-- Mostrar mapa -->
+    <ion-item>
+      <ion-label>Mapa del viaje:</ion-label>
+    </ion-item>
+    <iframe
+      [src]="mapUrl"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </ion-list>
+</ion-content>

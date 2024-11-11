@@ -12,6 +12,47 @@ ion-item {
   margin-bottom: 16px;
   padding: 16px;
 
+<<<<<<< HEAD
+=======
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111616; /* Fondo celeste suave */
+  }
+  
+  .login-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #007acc; /* Azul para el título */
+    margin-bottom: 25px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-item {
+    background-color: rgb(23, 20, 20);
+    margin-bottom: 20px;
+  }
+  
+  ion-label {
+    color: #007acc; /* Azul para etiquetas */
+    font-weight: bold;
+  }
+  
+>>>>>>> 009e34df33fc5a1917be2e2385b5f63b1aa257a6
   ion-input {
     --border-radius: 10px; /* Aplicar border-radius directamente */
     border-radius: 10px; /* Estilo adicional, si es necesario */
@@ -52,6 +93,7 @@ ion-button {
   0% {
     --background: #ff8200;
   }
+<<<<<<< HEAD
   50% {
     --background: #ffa733;
   }
@@ -59,3 +101,5 @@ ion-button {
     --background: #ff8200;
   }
 }
+=======
+>>>>>>> 009e34df33fc5a1917be2e2385b5f63b1aa257a6

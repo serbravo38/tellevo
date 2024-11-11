@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Solicitud de viaje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label position="floating">Nombre del usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="nombreUsuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Destino</ion-label>
+    <ion-input type="text" [(ngModel)]="destinoSeleccionado"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Número de pasajeros</ion-label>
+    <ion-input type="number" [(ngModel)]="cantidadPasajeros"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="enviarSolicitud()">Enviar Solicitud</ion-button>
+</ion-content>
